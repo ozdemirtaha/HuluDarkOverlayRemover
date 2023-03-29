@@ -1,0 +1,15 @@
+{
+    "name": "Hulu Dark Overlay Remover",
+    "version": "0.9.9",
+    "description": "Protect your eyes from dark video overlay when pausing a video",
+    "permissions": [],
+    "host_permissions": ["https://*.hulu.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://*.hulu.com/*"],
+        "js": ["hulu.js"],
+        "css": ["hulu.css"]
+      }
+    ],
+    "manifest_version": 3
+}
